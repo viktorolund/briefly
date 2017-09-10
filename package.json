@@ -2,7 +2,8 @@
   "name": "briefly",
   "version": "1.0.1",
   "description": "An extremely lightweight date/time formatter.",
-  "main": "index.js",
+  "main": "briefly.min.js",
   "author": "pgsil",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {}
 }
