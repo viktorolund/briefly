@@ -1,0 +1,8 @@
+{
+  "name": "briefly",
+  "version": "1.0.0",
+  "description": "An extremely lightweight date/time formatter.",
+  "main": "index.js",
+  "author": "pgsil",
+  "license": "MIT"
+}
