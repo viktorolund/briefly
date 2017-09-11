@@ -1,6 +1,6 @@
 {
   "name": "briefly",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "An extremely lightweight date/time formatter.",
   "main": "/dist/briefly.min.js",
   "author": "pgsil",
