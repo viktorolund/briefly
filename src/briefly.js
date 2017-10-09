@@ -66,6 +66,7 @@ module.exports = class Briefly {
 		)} ${this.leadZeroes(day)}/${this.leadZeroes(month)}`;
 	}
 
+	// HH:MM:SS - 16:08:22
 	static hhmmss(date) {
 		let d = new Date(date);
 
