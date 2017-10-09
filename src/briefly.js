@@ -66,6 +66,18 @@ module.exports = class Briefly {
 		)} ${this.leadZeroes(day)}/${this.leadZeroes(month)}`;
 	}
 
+	static hhmmss(date) {
+		let d = new Date(date);
+
+		let hour = d.getHours().toString();
+		let minutes = d.getMinutes().toString();
+		let seconds = d.getSeconds().toString();
+
+		return `${this.leadZeroes(hour)}:${this.leadZeroes(
+			minutes
+		)}:${this.leadZeroes(seconds)}`;
+	}
+
 	static weekDayFull(date) {
 		let weekDays = [
 			"domingo",
