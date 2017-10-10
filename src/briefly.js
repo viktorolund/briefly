@@ -54,6 +54,20 @@ class Briefly {
 		return `${this.leadZeroes(hour)}:${this.leadZeroes(minutes)}`;
 	}
 
+	// HH:MM DD/MM - 16:08 14/07
+	static hhmmddmm(date) {
+		let d = new Date(date);
+
+		let hour = d.getHours().toString();
+		let minutes = d.getMinutes().toString();
+		let day = d.getDate().toString();
+		let month = (d.getMonth() + 1).toString();
+
+		return `${this.leadZeroes(hour)}:${this.leadZeroes(
+			minutes,
+		)} ${this.leadZeroes(day)}/${this.leadZeroes(month)}`;
+	}
+
 	static weekDayFull(date, lang) {
 		try {
 			const weekDays = require(`./langs/${lang}`);
