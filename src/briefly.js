@@ -76,16 +76,11 @@ export function hhmmss(date) {
 	return `${leadZeroes(hour)}:${leadZeroes(minutes)}:${leadZeroes(seconds)}`;
 }
 
-export function weekDayFull(date) {
-	let weekDays = [
-		"domingo",
-		"segunda-feira",
-		"terça-feira",
-		"quarta-feira",
-		"quinta-feira",
-		"sexta-feira",
-		"sábado"
-	];
-
-	return weekDays[new Date(date).getDay()];
+export function weekDayFull(date, lang) {
+	try {
+    const weekDays = require(`./langs/${lang}`);
+    return weekDays[new Date(date).getDay()];
+  } catch (err) {
+    throw new Error("Cannot find current language selected.");
+  }
 }
